@@ -68,6 +68,7 @@ The project consists of two major Apps:
 Each Course has several topics. For each topic, a certain number of questions can be added. Then when an Admin/testCenter decide to create an exam, it will be created by selecting a group of questions randomly from the questions exesting in the database.
 2.The second one is made to let the students choose an exam, solve it and submit it. The student can show her/his courses, Exams and Submissions.
 Here, will be provided some of the processes that can be accomplished through the first project of the website:
+
 •	Logging in as Admin/TestCenter within an email and password:
 
 ![alt text](https://github.com/Nemat-Allah-Aloush/Exam-Platform-ASP.NET-Core/blob/main/Images/1.LogIn.png "Logging In")
