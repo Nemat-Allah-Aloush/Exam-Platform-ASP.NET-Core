@@ -1,0 +1,11 @@
+C:\Users\ASUS\Desktop\Azure\GroupC.Uni.Core\bin\Debug\netcoreapp2.2\GroupC.Uni.Core.deps.json
+C:\Users\ASUS\Desktop\Azure\GroupC.Uni.Core\bin\Debug\netcoreapp2.2\GroupC.Uni.Core.runtimeconfig.json
+C:\Users\ASUS\Desktop\Azure\GroupC.Uni.Core\bin\Debug\netcoreapp2.2\GroupC.Uni.Core.runtimeconfig.dev.json
+C:\Users\ASUS\Desktop\Azure\GroupC.Uni.Core\bin\Debug\netcoreapp2.2\GroupC.Uni.Core.dll
+C:\Users\ASUS\Desktop\Azure\GroupC.Uni.Core\bin\Debug\netcoreapp2.2\GroupC.Uni.Core.pdb
+C:\Users\ASUS\Desktop\Azure\GroupC.Uni.Core\obj\Debug\netcoreapp2.2\GroupC.Uni.Core.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\Azure\GroupC.Uni.Core\obj\Debug\netcoreapp2.2\GroupC.Uni.Core.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\Azure\GroupC.Uni.Core\obj\Debug\netcoreapp2.2\GroupC.Uni.Core.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\Azure\GroupC.Uni.Core\obj\Debug\netcoreapp2.2\GroupC.Uni.Core.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\Azure\GroupC.Uni.Core\obj\Debug\netcoreapp2.2\GroupC.Uni.Core.dll
+C:\Users\ASUS\Desktop\Azure\GroupC.Uni.Core\obj\Debug\netcoreapp2.2\GroupC.Uni.Core.pdb

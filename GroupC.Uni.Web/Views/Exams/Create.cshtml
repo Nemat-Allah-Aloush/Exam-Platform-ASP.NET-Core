@@ -1,0 +1,92 @@
+﻿@model GroupC.Uni.Web.ViewModels.ExamViewModel
+
+<script src="~/bowercomponents/jquery/dist/jquery.min.js"></script>
+<script src="~/bowercomponents/moment/min/moment.min.js"></script>
+<script src="~/bowercomponents/bootstrap/dist/js/bootstrap.min.js"></script>
+<link href="~/bowercomponents/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<script src="~/bowercomponents/bootstrap-datepicker.*js"></script>
+
+<!-- include your less or built css files  -->
+<!--
+bootstrap-datetimepicker-build.less will pull in "../bootstrap/variables.less" and "bootstrap-datetimepicker.less";
+or
+<link rel="stylesheet" href="/Content/bootstrap-datetimepicker.css" />
+-->
+<section class="content">
+    <div class="row">
+        <div class="col-sm-2"> </div>
+        <div class="col-sm-7">
+            <div class="box box-default Absolute-Center is-Responsive">
+                <div class="box-header with-border" style="text-align:center;">
+                    <h2>Create Exams</h2>
+                </div>
+                <form asp-action="Create" id="ExamForm">
+                    <div class="box-body" id="panelBody">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <label asp-for="DurationInMinutes" class="control-label"></label>
+                            <input asp-for="DurationInMinutes" class="form-control" />
+                            <span asp-validation-for="DurationInMinutes" class="text-danger"></span>
+                        </div>
+                        @*<div class="form-group">
+                                <div class="checkbox">
+                                    <label>
+                                        <input asp-for="IsRandom" /> @Html.DisplayNameFor(model => model.IsRandom)
+                                    </label>
+                                </div>
+                            </div>*@
+                        <div class="form-group">
+                            @*<label asp-for="QuestionsCount" class="control-label"></label>*@
+                            <label>Question Count</label>
+                            <input asp-for="QuestionsCount" class="form-control" />
+                            <span asp-validation-for="QuestionsCount" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="CourseId" class="control-label"></label>
+                            <select asp-for="CourseId" class="form-control" asp-items="ViewBag.CourseId"></select>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="TestCenterId" class="control-label"></label>
+                            <select asp-for="TestCenterId" class="form-control" asp-items="ViewBag.TestCenterId"></select>
+                        </div>
+                        @*<div class="form-group">
+                                <label asp-for="ExamDateTime" class="control-label"></label>
+                                <input asp-for="ExamDateTime" class="form-control" />
+                                <span asp-validation-for="ExamDateTime" class="text-danger"></span>
+                            </div>*@
+
+                        <div class="form-group">
+                            <div class='input-group'>
+                                <label asp-for="ExamDateTime" class="control-label"></label>
+                                <input asp-for="ExamDateTime" class="form-control" id="dateTimePicker">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                                </input>
+                            </div>
+                        </div>
+
+                        <div class="box-footer">
+                            <div class="form-group">
+                                <input class="btn btn-github" type="submit" value="Generate Exam Questions and Create" id="CreateExam" />
+                                <div class="pull-right">
+                                    <input type="button" value="Cancel" class="btn btn-danger" onclick="location.href='@Url.Action("Index","Exams")';" />
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<script type="text/javascript">
+    $(function () {
+        $('#dateTimePicker').datetimerpicker();
+    });
+</script>

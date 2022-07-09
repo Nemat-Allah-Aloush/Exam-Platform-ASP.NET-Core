@@ -1,0 +1,92 @@
+﻿@model GroupC.Uni.ConsumingApi.ViewModels.SubmissionViewModel
+<div class="blog">
+    <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10">
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading align-content-center" style="margin-bottom:20px;">
+                        <div class="panel-title text-center panel-relative" style="height:unset">
+                            <h2> @Html.DisplayFor(model => model.Exam.Course.Name) Exam Submission</h2>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Date:   @Html.DisplayFor(model => model.date)</li>
+                                <li>Student : @Html.DisplayFor(model => model.Student.ApplicationUser.userName) </li>
+                                <li>Test Center: @Html.DisplayFor(model => model.Exam.TestCenter.Name)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    @{
+                     @foreach (var item in Model.SubmissionChoices)
+                        {<div class="panel-group">
+                                <div class="row">
+                                    <div class="col-xs-2"></div>
+                                    <div class="col-xs-8">
+                                        <div class="panel-group">
+                                            <div class="panel panel-info">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        Question: @item.Choice.Question.Text
+                                                    </h4>
+                                                    <ul>
+                                                        <li>
+                                                            Question Mark: @item.Choice.Question.Mark
+                                                        </li>
+                                                        <li>
+                                                            Topic Name: @item.Choice.Question.Topic.Name
+                                                        </li>
+                                                        <li>
+                                                            Answer: @item.Choice.Text
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div class="form-group">
+                                                        <h6>The Choices</h6>
+                                                        <ul>
+                                                            
+                                                            @foreach (var ch in item.Choice.Question.Choices)
+                                                            {
+                                                                @if (ch.Type)
+                                                                {
+                                                                    <li style="color:limegreen">@ch.Text</li>}
+                                                                @if (!ch.Type)
+                                                                {
+                                                                    <li style="color:red">@ch.Text</li>}
+                                                            }
+                                                        </ul>
+                                                        
+                                                        <!--change the id and name and for for each choice when runing in a for loop by using a counter-->
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
