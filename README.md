@@ -73,9 +73,9 @@ Here, will be provided some of the processes that can be accomplished through th
 
 ![alt text](https://github.com/Nemat-Allah-Aloush/Exam-Platform-ASP.NET-Core/blob/main/Images/1.LogIn.png "Logging In")
 
-•	Admin/TestCenter home page: From the home page as shown in the following picture, the user can access view/add student/course/topic/question/exam according to his/her rule.
+•	Admin/TestCenter home page: From the home page as shown in the following picture, the user can access view/add student/course/topic/question/exam according to their rule.
 
-![alt text](https://github.com/Nemat-Allah-Aloush/Exam-Platform-ASP.NET-Core/blob/main/Images/1.LogIn.png "Homepage")
+![alt text](https://github.com/Nemat-Allah-Aloush/Exam-Platform-ASP.NET-Core/blob/main/Images/2.HomePage.png "Homepage")
 
 •	In the home page when pressing on one of the four upper boxes, a table of its content will be shown, as the following figure when pressing on “See content” from the “Exam” box.
 
